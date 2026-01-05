@@ -1,16 +1,76 @@
-# React + Vite
+# TestProjectSciTechEcommerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a sample eCommerce backend application built using Node.js.  
+It includes REST APIs, schema validation, unit/API tests, and end-to-end tests using Playwright.
 
-Currently, two official plugins are available:
+The project is intended to demonstrate:
+- API development practices
+- Request/response validation
+- Automated testing (unit + e2e)
+- Clear local setup and execution flow
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js
+- Express
+- Jest (API & unit testing)
+- Supertest
+- AJV (JSON schema validation)
+- Playwright (end-to-end testing)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Prerequisites
+
+Make sure the following are installed on your system:
+
+- Node.js (v18 recommended)
+- npm
+
+Check versions:
+
+-
+node -v
+npm -v
+
+Clone the Repository
+-
+Copy code
+git clone https://github.com/vilaskolhe/testProjectSciTechEcommerce.git
+cd testProjectSciTechEcommerce
+Install Dependencies
+-
+Copy code
+npm install
+Run the Application Locally
+Start the server:
+
+-
+Copy code
+npm run dev
+The application will start on the configured local port.
+
+Run Unit / API Tests
+-
+Copy code
+npm test
+This will:
+
+Run Jest tests
+
+Validate API responses
+
+Generate coverage output
+
+Run End-to-End Tests (Playwright)
+-
+Copy code
+npx playwright test
+View Playwright HTML Report
+After test execution:
+
+-
+Copy code
+npx playwright show-report
